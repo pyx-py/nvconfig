@@ -84,8 +84,8 @@ local pluginKeys = {}
 
 -- bufferline
 -- 左右Tab切换
-map("n", "<C-h>", ":BufferLineCyclePrev<CR>", opt)
-map("n", "<C-l>", ":BufferLineCycleNext<CR>", opt)
+map("n", "<SPACE>h", ":BufferLineCyclePrev<CR>", opt)
+map("n", "<SPACE>l", ":BufferLineCycleNext<CR>", opt)
 -- 关闭
 --"moll/vim-bbye"
 map("n", "<SPACE>w", ":Bdelete!<CR>", opt) -- 关闭当前标签页
@@ -157,8 +157,8 @@ pluginKeys.comment = {
   },
 }
 -- ctrl + /
-map("n", "<C-_>", "gcc", { noremap = false })
-map("v", "<C-_>", "gcc", { noremap = false })
+map("n", "<C-/>", "gcc", { noremap = false })
+map("v", "<C-/>", "gcc", { noremap = false })
 
 -- lsp 回调函数快捷键设置
 pluginKeys.mapLSP = function(mapbuf)
