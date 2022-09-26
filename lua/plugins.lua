@@ -82,6 +82,10 @@ packer.startup({
     use("glepnir/lspsaga.nvim") -- 代码提示跳转变为浮动窗口形式
     use("jose-elias-alvarez/null-ls.nvim") -- 代码格式化
     use("lewis6991/gitsigns.nvim") -- git插件
+    use("akinsho/toggleterm.nvim") -- terminal插件
+    use("numToStr/Comment.nvim") -- 快速Commentc插件
+    use("windwp/nvim-autopairs") -- 自动补全括号
+    use("j-hui/fidget.nvim") -- nvim-lsp UI
   end,
   config = {
     --浮动窗口显示安装列表
