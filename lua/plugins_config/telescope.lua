@@ -15,14 +15,21 @@ telescope.setup({
     -- 内置 pickers 配置
     find_files = {
       -- 查找文件换皮肤，支持的参数有： dropdown, cursor, ivy
-      -- theme = "dropdown", 
-    }
+      -- theme = "dropdown",
+    },
   },
   extensions = {
-     -- 扩展插件配置
+    -- 扩展插件配置
+    ["ui-select"] = {
+      require("telescope.themes").get_dropdown({
+        -- even more opts
+        initial_mode = "normal",
+      }),
+    },
   },
 })
 
 -- telescope extensions
-pcall(telescope.load_extension, "env")
-
+-- pcall(telescope.load_extension, "env")
+-- telescope extension UI
+pcall(telescope.load_extension, "ui-select")

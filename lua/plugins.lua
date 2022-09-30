@@ -11,6 +11,12 @@ packer.startup({
     use("ful1e5/onedark.nvim")
     -- nightfox
     use("EdenEast/nightfox.nvim")
+    -- sainnhe/sonokai
+    use("sainnhe/sonokai")
+    -- Th3Whit3Wolf/space-nvim
+    use("Th3Whit3Wolf/space-nvim")
+    -- glepnir/zephyr-nvim
+    use("glepnir/zephyr-nvim")
     --------------------- plugins -------------------------
     -- nvim-tree: 文件树侧边栏插件
     use("kyazdani42/nvim-web-devicons")
@@ -47,6 +53,7 @@ packer.startup({
       --  "nvim-lua/plenary.nvim"
       --}
     })
+    use("nvim-telescope/telescope-ui-select.nvim") -- telescope extension UI
     use({
       "ahmedkhalf/project.nvim",
     })
@@ -58,6 +65,7 @@ packer.startup({
     })
     -- treesitter:代码高亮
     use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
+    use("p00f/nvim-ts-rainbow") -- 彩虹括号
     --------------------- LSP --------------------
     use("williamboman/nvim-lsp-installer")
     -- Lspconfig
@@ -86,6 +94,7 @@ packer.startup({
     use("numToStr/Comment.nvim") -- 快速Commentc插件
     use("windwp/nvim-autopairs") -- 自动补全括号
     use("j-hui/fidget.nvim") -- nvim-lsp UI
+    use("rcarriga/nvim-notify") -- notify
   end,
   config = {
     --浮动窗口显示安装列表

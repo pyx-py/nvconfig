@@ -84,14 +84,14 @@ local pluginKeys = {}
 
 -- bufferline
 -- 左右Tab切换
-map("n", "<SPACE>h", ":BufferLineCyclePrev<CR>", opt)
-map("n", "<SPACE>l", ":BufferLineCycleNext<CR>", opt)
+map("n", "<C-h>", ":BufferLineCyclePrev<CR>", opt)
+map("n", "<C-l>", ":BufferLineCycleNext<CR>", opt)
 -- 关闭
 --"moll/vim-bbye"
-map("n", "<SPACE>w", ":Bdelete!<CR>", opt) -- 关闭当前标签页
-map("n", "<SPACE>bl", ":BufferLineCloseRight<CR>", opt) -- 关闭右侧标签页
-map("n", "<SPACE>bh", ":BufferLineCloseLeft<CR>", opt) -- 关闭左侧标签页
-map("n", "<SPACE>bp", ":BufferLinePickClose<CR>", opt) -- 选择要关闭的标签页
+map("n", "<C-w>", ":Bdelete!<CR>", opt) -- 关闭当前标签页
+map("n", "cbl", ":BufferLineCloseRight<CR>", opt) -- 关闭右侧标签页
+map("n", "cbh", ":BufferLineCloseLeft<CR>", opt) -- 关闭左侧标签页
+map("n", "cbp", ":BufferLinePickClose<CR>", opt) -- 选择要关闭的标签页
 
 -- Telescope
 -- 查找文件
@@ -157,8 +157,8 @@ pluginKeys.comment = {
   },
 }
 -- ctrl + /
-map("n", "<C-/>", "gcc", { noremap = false })
-map("v", "<C-/>", "gcc", { noremap = false })
+-- map("n", "<C-/>", "gcc", { noremap = false })
+-- map("v", "<C-/>", "gcc", { noremap = false })
 
 -- lsp 回调函数快捷键设置
 pluginKeys.mapLSP = function(mapbuf)
