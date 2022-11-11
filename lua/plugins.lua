@@ -107,6 +107,7 @@ packer.startup({
     max_jobs = 16,
     -- 自定义源
     git = {
+      clone_timeout = 60,
       default_url_format = "https://gh.api.99988866.xyz/https://github.com/%s",
       -- default_url_format = "https://gitclone.com/github.com/%s",
       -- default_url_format = "https://mirror.ghproxy.com/https://github.com/%s",
